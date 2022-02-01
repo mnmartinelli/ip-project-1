@@ -13,37 +13,40 @@
       padding: 50px;
       font-family: sans-serif;
     }
-    hello-world {
-      border: 10px solid black;
+    course-dates {
+      background-color: white;
     }
-    hello-world[name="cool"] {
-      color: orange;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    user-ip[ip="24.48.0.1"] {
+    course-dates[load-data] {
       background-color: orange;
+      transition: 1s ease-in-out background-color;
     }
   </style>
-  <title>Project one: </title>
+  <title>Lab 4/5</title>
 </head>
 
 <body>
   <h1>Course dates example</h1>
-  <course-dates></course-dates>
-  <select id="select"></select>
-  <button id="load">load data</button>
-  <button id="reset">reset data</button>
+  <label for="select">Results count:</label>
+  <div id="select"></div>
+  <button id="load">Load data</button>
+  <button id="reset">Reset data</button>
+  <course-dates id="dates1"></course-dates>
+  <course-dates id="dates2" view="list"></course-dates>
   <script type="module">
     import "./src/CourseDates.js";
+    // 
     document.querySelector("#load").addEventListener("click", (e) => {
-      document.querySelector("course-dates").loadData = true;
+      document.querySelector("#dates1").loadData = true;
+      document.querySelector("#dates2").loadData = true;
 
     });
     document.querySelector("#reset").addEventListener("click", (e) => {
-      document.querySelector("course-dates").resetData();
+      document.querySelector("#dates1").resetData();
+      document.querySelector("#dates2").resetData();
     });
-    document.querySelector("#reset").addEventListener("results-loaded", (e) => {
-      
+    document.querySelector("course-dates").addEventListener("results-changed", (e) => {
+      console.log(e.detail);
+      document.querySelector("#select").innerHTML = e.detail.value.length;
     });
   </script>
 </body>
