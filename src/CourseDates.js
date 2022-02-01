@@ -43,8 +43,8 @@ class CourseDates extends LitElement {
         this.dates = [];
         // many ways to loop here -- https://www.codespot.org/ways-to-loop-through-an-array-in-javascript/#:~:text=6%20Ways%20to%20Loop%20Through%20an%20Array%20in,callback%20function%20for%20each%20element%20in%20the%20array.
         // for loop runs synchronously though
+        /* eslint-disable */
         for (let i = 0; i < data.length; i++) {
-          // eslint-disable-line
           // the API we're drawing in is confusing, let's simplify for internal usage to our element
           const eventInfo = {
             name: data[i].details,
@@ -66,7 +66,7 @@ class CourseDates extends LitElement {
           // this is very lazy and very brute force
           eventInfo.start = eventInfo.start.split('T')[1].replace('-5:00', '');
           eventInfo.end = eventInfo.end.split('T')[1].replace('-5:00', '');
-          console.log(eventInfo); // eslint-disable-line
+          console.log(eventInfo);
           this.dates.push(eventInfo);
         }
         setTimeout(() => {
