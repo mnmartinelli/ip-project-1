@@ -1,0 +1,120 @@
+[{
+    "location": "Westgate E201",
+    "start_time": "2022-01-20T9:00-5:00",
+    "end_time": "2022-01-20T10:15-5:00",
+    "details": "IST 301; Professor Adams",
+    "order": 1
+},
+{
+    "location": "Thomas 100",
+    "start_time": "2022-01-20T12:00-5:00",
+    "end_time": "2022-01-20T12:50-5:00",
+    "details": "ACCTG 211; Professor Smith",
+    "order": 2
+},
+{
+    "location": "Wartik 102",
+    "start_time": "2022-01-20T14:30-5:00",
+    "end_time": "2022-01-20T15:20-5:00",
+    "details": "IST 440; Professor Ryan",
+    "order": 3
+},
+{
+    "location": "Thomas 105",
+    "start_time": "2022-01-20T15:30-5:00",
+    "end_time": "2022-01-20T16:20-5:00",
+    "details": "ANTH 140; Professor Marks",
+    "order": 4
+},
+{
+    "location": "Thomas 100",
+    "start_time": "2022-01-20T12:00-5:00",
+    "end_time": "2022-01-20T12:50-5:00",
+    "details": "ACCTG 211; Professor Smith",
+    "order": 2
+},
+{
+    "location": "Wartik 102",
+    "start_time": "2022-01-20T14:30-5:00",
+    "end_time": "2022-01-20T15:20-5:00",
+    "details": "IST 440; Professor Ryan",
+    "order": 3
+},
+{
+    "location": "Thomas 105",
+    "start_time": "2022-01-20T15:30-5:00",
+    "end_time": "2022-01-20T16:20-5:00",
+    "details": "ANTH 140; Professor Marks",
+    "order": 4
+},
+{
+    "location": "Thomas 100",
+    "start_time": "2022-01-20T12:00-5:00",
+    "end_time": "2022-01-20T12:50-5:00",
+    "details": "ACCTG 211; Professor Smith",
+    "order": 2
+},
+{
+    "location": "Wartik 102",
+    "start_time": "2022-01-20T14:30-5:00",
+    "end_time": "2022-01-20T15:20-5:00",
+    "details": "IST 440; Professor Ryan",
+    "order": 3
+},
+{
+    "location": "Thomas 105",
+    "start_time": "2022-01-20T15:30-5:00",
+    "end_time": "2022-01-20T16:20-5:00",
+    "details": "ANTH 140; Professor Marks",
+    "order": 4
+},
+{
+    "location": "Thomas 100",
+    "start_time": "2022-01-20T12:00-5:00",
+    "end_time": "2022-01-20T12:50-5:00",
+    "details": "ACCTG 211; Professor Smith",
+    "order": 2
+},
+{
+    "location": "Wartik 102",
+    "start_time": "2022-01-20T14:30-5:00",
+    "end_time": "2022-01-20T15:20-5:00",
+    "details": "IST 440; Professor Ryan",
+    "order": 3
+},
+{
+    "location": "Thomas 105",
+    "start_time": "2022-01-20T15:30-5:00",
+    "end_time": "2022-01-20T16:20-5:00",
+    "details": "ANTH 140; Professor Marks",
+    "order": 4
+},
+{
+    "location": "Thomas 100",
+    "start_time": "2022-01-20T12:00-5:00",
+    "end_time": "2022-01-20T12:50-5:00",
+    "details": "ACCTG 211; Professor Smith",
+    "order": 2
+},
+{
+    "location": "Wartik 102",
+    "start_time": "2022-01-20T14:30-5:00",
+    "end_time": "2022-01-20T15:20-5:00",
+    "details": "IST 440; Professor Ryan",
+    "order": 3
+},
+{
+    "location": "Thomas 105",
+    "start_time": "2022-01-20T15:30-5:00",
+    "end_time": "2022-01-20T16:20-5:00",
+    "details": "ANTH 140; Professor Marks",
+    "order": 4
+},
+{
+    "location": "Sparks 011",
+    "start_time": "2022-01-20T17:00-5:00",
+    "end_time": "2022-01-20T18:15-5:00",
+    "details": "COMM 100; Professor Todd",
+    "order": 5
+}
+]
