@@ -28,41 +28,24 @@
 </head>
 
 <body>
-  <h1>Hello Worlds tags</h1>
-  <hello-world name="cool"></hello-world>
-  <hello-world name="Jeb"><p>Please clap..</p></hello-world>
-  <hello-world name="partner"></hello-world>
+  <h1>Course dates example</h1>
+  <course-dates></course-dates>
+  <select id="select"></select>
+  <button id="load">load data</button>
+  <button id="reset">reset data</button>
   <script type="module">
-    import "./src/HelloWorld.js";
+    import "./src/CourseDates.js";
+    document.querySelector("#load").addEventListener("click", (e) => {
+      document.querySelector("course-dates").loadData = true;
+
+    });
+    document.querySelector("#reset").addEventListener("click", (e) => {
+      document.querySelector("course-dates").resetData();
+    });
+    document.querySelector("#reset").addEventListener("results-loaded", (e) => {
+      
+    });
   </script>
-  <h1>IP look up</h1>
-  <user-ip></user-ip>
-  <user-ip ip="24.48.0.1"></user-ip>
-  <script type="module">
-    // this makes user-ip web component work
-    import {UserIP} from "./src/UserIP.js";
-    // we make an instance of the class
-    const getIPClass = new UserIP();
-    // we wait 100ms and then we ask the class for the user's IP
-    setTimeout(async() => {
-      console.log(await getIPClass.updateUserIP());
-    }, 100);
-  </script>
-  <h1>Location based on IP address as a map</h1>
-  <location-from-ip></location-from-ip>
-  <script type="module">
-    import "./src/LocationFromIP.js";
-  </script>
-  <h1>Example event binding</h1>
-  <script type="module">
-    import {html, render} from "lit";
-    function addIpTag(e) {
-      const userIp = document.createElement("user-ip");
-      document.querySelector("#demo").appendChild(userIp);
-    }
-    render(html`<button @click="${addIpTag}">Call the IP API</button>`, document.querySelector("#demo"));
-  </script>
-  <div id="demo"></div>
 </body>
 
 </html>
